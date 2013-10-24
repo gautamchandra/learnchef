@@ -11,3 +11,7 @@ chef_server_url          "https://api.opscode.com/organizations/gctest"
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks"]
+
+knife[:aws_access_key_id] = 'AKIAJYTEYR7BNFL2MOTQ'
+knife[:aws_ssh_key_id] = 'test_server'
+knife[:aws_secret_access_key] = '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'
